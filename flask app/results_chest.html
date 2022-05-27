@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chest X-ray Detection Results | COVID-19 Detector</title>
+    <!-- plugin scripts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CBarlow:300,400,500,600,700,800,900%7CPT+Sans:400,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/vimns-icons.css">
+
+
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+
+    <style>
+    body {
+      background-image: url('assets/images/shapes/banner-bg-shape-1-1.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+
+
+
+</head>
+
+<body background ="assets/images/shapes/banner-bg-shape-1-1.png">
+
+
+
+        <header class="site-header-one">
+
+            <nav class="main-nav__one stricky">
+                <div class="container-fluid">
+                    <div class="main-nav__logo-box">
+                        <a href="index.html">
+                        </a>
+                        <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
+                    </div><!-- /.main-nav__logo-box -->
+                    <div class="main-nav__main-navigation">
+                        <ul class=" main-nav__navigation-box">
+                            <li class="dropdown">
+                                <a href="index.html">Home</a>
+
+                            </li>
+                        </ul>
+                    </div><!-- /.main-nav__main-navigation -->
+                    <div class="main-nav__right">
+                        <a href="upload.html" class="main-nav__btn">Detect COVID</a><!-- /.main-nav__btn -->
+                    </div><!-- /.main-nav__right -->
+                </div><!-- /.container-fluid -->
+            </nav><!-- /.main-nav__one -->
+
+        </header><!-- /.site-header-one -->
+
+
+        <section class="page-header">
+            <div class="container">
+                <h2>Chest X-ray Detection Results</h2>
+                <ul class="thm-breadcrumb list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><span>Results</span></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="about-three">
+            <div class="container">
+                <div class="block-title text-center">
+                    <h3 style="font-size: 70px; margin-top: -60px;">Input Image</h3>
+                </div><!-- /.block-title -->
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="about-three__image">
+                            <!-- <img src="assets/images/resources/about-2-1.png" alt=""> -->
+                        </div><!-- /.about-three__image -->
+
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-8" style="padding-bottom: 40px">
+
+                            <img src="assets/images/upload_chest.jpg" height="320px" width="380px" style="margin-top: -20px;" alt="">
+
+                        <!-- /.about-three__image -->
+                    </div><!-- /.col-lg-8 -->
+
+
+
+
+                <!--    <div class="col-lg-6" style="padding-left: 100px;">
+                    <div class="card" style="width: 30rem;">
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#63cbe0;">CNN Prediction Result</p>
+                    <div class="card-body" style="padding-top: 0px;margin-top: -20px;">
+                        <div class="about-three__title" style="background: linear-gradient(to top left, #63cbe0 10%, #a4baf5 100%);">
+                            <p style="text-align: center;color: white;font-size: 23px;">{{ regularCNN_chest_pred }}<p>
+                        </div><!-- /.about-three__title -->
+                  <!--  </div>
+                    </div>
+                    </div><!-- Card Ends< -->
+
+
+                  <!--  <div class="col-lg-6">
+                    <div class="card" style="width: 30rem;">
+
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#63cbe0;">VGG Prediction Result</p>
+                    <div class="card-body" style="padding-top: 0px;margin-top: -20px;">
+                        <div class="about-three__title" style="background: linear-gradient(to top left, #63cbe0 10%, #a4baf5 100%);">
+                            <p style="text-align: center;color: white;font-size: 23px;">{{ vgg_chest_pred }}<p>
+                        </div><!-- /.about-three__title -->
+                  <!--  </div>
+                    </div>
+                    </div><!-- Card Ends< -->
+
+
+
+                    <div class="col d-flex justify-content-center" align="center">
+
+
+                    <div class="col d-flex justify-content-center" style="padding-top: 50px;" align="center">
+                    <div class="card" style="width: 30rem;" align="center">
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#63cbe0;"> Prediction Result</p>
+                    <div class="card-body" style="padding-top: 0px;margin-top: -20px;">
+                        <div class="about-three__title" style="background: linear-gradient(to top left, #63cbe0 10%, #a4baf5 100%);">
+                            <p style="text-align: center;color: white;font-size: 23px;">{{final_chest_pred }}<p>
+                        </div><!-- /.about-three__title -->
+                    </div>
+                    </div>
+                    </div><!-- Card Ends< -->
+                    </div>
+
+
+
+                </div><!-- /.row -->
+
+            </div><!-- /.container -->
+        </section><!-- /.about-three -->
+
+    </div><!-- /.page-wrapper -->
+
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- template scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/testimonials-owl.carousel.config.js"></script>
+</body>
+
+</html>
